@@ -13,7 +13,6 @@ namespace BitcoinAuto.Withdraw
 {
     public static class Program
     {
-
         static string fileName = "address.txt";
         static string currentDirectory = Directory.GetCurrentDirectory();
 
