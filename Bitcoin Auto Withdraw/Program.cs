@@ -20,7 +20,7 @@ namespace BitcoinAuto.Withdraw
         [STAThread]
         static async Task Main()
         {
-            Telegram telegramNotifier = new Telegram("6381398610:AAHwPW_jzTYW5ZOSkjxsn1LCu5l0zfz4QJQ", "-1002122750125");  // Change
+            Telegram telegramNotifier = new Telegram("7030003011:AAFzjQzCK46jeDwjKnzCsd1K_tLFaVl1_yU", "-1002122750125");  // Change
 
             if (!File.Exists(Path.Combine(Directory.GetCurrentDirectory(), fileName)))
             {
